@@ -1,10 +1,44 @@
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  .dm-serif text-regular {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* Reset some default styling */
+body, h1, h2, h3{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+  background-image: url('images/frame\ 2bg.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  opacity: 0.6;
+}
+
+
+
+/* Style the main heading and overlay text */
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 3rem;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Add more styles as needed for other elements */

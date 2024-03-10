@@ -1,8 +1,15 @@
+.hero {
+  background-image: url(images/frame\ 2bg.jpg);
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero-section{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3rem;
+  margin-top: 100px;
 }
 
 .hero-section .left, .hero-section .right {
@@ -10,7 +17,7 @@
 }
 
 .hero-section .right{
-  width: 50%;
+  width: 40%;
   border-radius: 20%;
 }
 
@@ -55,7 +62,7 @@
   width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0,0,0,0.6),#0066b2);
-  border-radius: 10px;
+  border-radius: 10px;i
   position: absolute;
   left: 0;
   bottom: 0;
