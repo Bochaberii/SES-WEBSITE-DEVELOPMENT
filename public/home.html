@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn {
+    
+  
+    padding: 16px;
+    
+    border: none;
+    cursor: pointer;
+  }
+  .imageshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default  */
+.imageClass {
+    display: none;
+}
+
+/* Adding fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Defining the dot styles */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Setting a different style for hovering and active */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex items-center justify-between">
+        
+        <div>
+            <h1 class="text-blue-400 font-bold text-2xl ml-7 poppins-medium mt-5">
+                SOCIETY OF ENGINEERING STUDENTS 
+            </h1> 
+            </div>
+           <div>
+           
+               <ul class="flex gap-8 mr-8 mt-5 poppins-medium text-base">
+                   <li class="text-xl hover:text-white hover:cursor-pointer">Home</li>
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn navbutton text-xl hover:text-white hover:cursor-pointer">About</a>
+                    <div class="dropdown-content">
+                        <a href="about.html" >Committee chairs</a>
+                        <a href="main.html">Engineering courses representatives</a>
+                        
+                    </div>
+                </li>
+                    
+                   
+               
+
+                   <li class="text-xl hover:text-white hover:cursor-pointer">Blog</li>
+                   <li class="text-xl hover:text-white hover:cursor-pointer">Merch</li>
+                   <li class="text-xl hover:text-white hover:cursor-pointer">Log in</li>
+                   <li class="text-xl hover:text-white hover:cursor-pointer">Contact us</li>
+               </ul>
+           </div>
+          </nav>
+          <main class="mt-11">
+            <div class="flex justify-center ...">
+              <div class="w-full h-full">
+            <p class="text-3xl mb-5">
+                WELCOME TO <br>
+                JKUAT Society of Engineering Students
+            </p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >BECOME A MEMBER</button>
+            </div>
+            </div>
+          </main>
+          <section >
+            
+            <div class="slideshow">
+              <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <input type="radio" name="radio-btn" id="radio5">
+                  <input type="radio" name="radio-btn" id="radio6">
+
+                 <div class="slide">
+                    <img src="images/DOS_3976.JPG" alt="">
+                    </div>
+                  <div class="slide first">
+                    <img src="images/FOR NEWSI.jpg" alt="" class="h-6">
+                  </div>
+                 
+                    
+                    <div class="slide">
+                    <img src="images/IMG-20240308-WA0033.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                    <img src="images/IMG-20240316-WA0181.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                    <img src="images/20240323_170221.jpg" alt="">
+                    </div>
+
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn1"></div>
+                    
+                  </div>
+                </div>
+                  <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                   
+                  </div>
+              </div>
+
+          </section>
+          <section class="m-8">
+           <h2 class="text-center text-3xl mt-9">What is SES?</h2>
+            <p class="mb-4 mt-4 text-xl">  The J.K.U.A.T. Society of Engineering Students (S.E.S.) is a body
+                established for the student who desires to discover what lies beyond
+                books. S.E.S.'s activities are geared towards holistic development
+                of its members, molding individuals who are not only well-adapted at
+                classroom level, but also stand out in the practical scene and
+                corporate engineering world at large. </p>
+         
+          <h2 class="text-center text-3xl mt-12">Vision</h2>
+          <p class="mb-4 mt-4 text-xl">To foster a culture of continous learning, mentorship and innovation, propelling our members to become influential leaders in engineering and societal progress</p>
+          <h2 class="text-center text-3xl mt-12">Mission</h2>
+          <p class="mb-8 mt-4 text-xl">To ignite a passion for engineering, leaving an indelible mark on society, while cherishing the memories and connections forged along the journey</p>
+         </section>
+         <section class="bg-white pt-5 pb-10">
+          <div class="slideshow-container mx-auto mt-8 ">
+              <h2 class="text-xl font-bold poppins-medium text-blue-950 mb-5 text-center mt-10 ">SES UPCOMING EVENTS</h2>
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/dinner1.jpg" style="width:100% ;opacity:0.7;">
+                <div class="text">
+                  <h3 class="font-bold text-gray-800 text-4xl poppins-medium">Dinner</h3>
+                  <p class="font-medium text-black text-lg poppins-medium">This is an event organized to enable the engineering students to engage with each other and have some fun as they eat a palatable meal.
+      
+                      The main agenda of the night is usually to hand over the mantle to the next executive for the next regime. The new executive is usually sworn in to leadership on the same day.
+                      </p>
+                </div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/picnic (1).jpg" style="width:100% ;opacity:0.7;">
+                <div class="text">
+                  <h3 class="font-bold text-gray-800 text-4xl poppins-medium">WIT Picnic</h3>
+                  <p class="font-medium text-black text-lg poppins-medium">This is a get together amongst female engineering students to share ideas in the field and upcoming trends in tech.It’s also an opportunity to network witheach other and at the same time have fun and bond.The students and usually encouraged to participate in hackathons organized by the committee.
+      
+                  </p>
+                </div>
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/TechWeek-5227.jpg" style="width:100% ;opacity:0.7;">
+                <div class="text">
+                  <h3 class="font-bold text-gray-800 text-4xl poppins-medium">Techweek</h3>
+                  <p class="font-medium text-black text-lg poppins-medium">This is an event organized for students to provide an opportunity for them to learn as well as to network with industry professionals.
+      
+                      It’s a two day event which consists of workshops and hackathons on the first and second day respectively. The hackathons are inclusive of all the engineering fields.
+                      
+                      </p>
+                </div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/TechWeek-5227.jpg" style="width:100% ;opacity:0.7;">
+                <div class="text">
+                  <h3 class="font-bold text-gray-800 text-4xl poppins-medium">Cildren's home visit</h3>
+                  <p class="font-medium text-black text-lg poppins-medium">This is an event organized for students to provide an opportunity for them to learn as well as to network with industry professionals.
+      
+                      It’s a two day event which consists of workshops and hackathons on the first and second day respectively. The hackathons are inclusive of all the engineering fields.
+                      
+                      </p>
+                </div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+      </section>
+         
+         <script src="script.js"></script>
+</body>
+</html>
