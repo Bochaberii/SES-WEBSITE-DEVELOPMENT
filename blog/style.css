@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Header background image */
+
+header {
+    background-image: url('cir.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    padding: 50px;
+    /* Adjust height as needed */
+}
+
+/* Sharearticle background image */
+.sharearticle {
+    background-image: url('tech.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;  
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+/* Newsletter background image */
+.newsletter {
+    background-image: url('eng6.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Adjust padding as needed */
+}
+
+/* Magazine background image */
+.MAGAZINE {
+    background-image: url('eng10.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Adjust padding as needed */
+}
+
+/* Community background image */
+.community {
+    background-image: url('eng5.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Adjust padding as needed */
+}
+.left h1{
+    font-family:'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.left p{
+
+}
+.divs-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.divs-col img{
+    width: 100%;
+    
+    border-radius: 10px;
+}
+.row{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.divs-col h3{
+    text-align: center;
+   font-weight: 600;
+   align-self: hover;
+}
+.divs-col p{
+    text-align: right;
+}
+.divs-col h3:hover{
+    font-size: large;
+}
+<section class="community">
+<div class="top">
+  
+<h2>SES COMMUNITY</h2>
+<p>What others have to say</p>
+</div>
+<div class="bottom">
+<div class="left">
+    <img src="" alt="">
+
+</div>
+<div class="middle">
+
+</div>
+<div class="bottom">
+
+</div>
+</div>
+</section>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+div class="row flex items-center gap-[3vw] mx-20 mt-4">
+                    <div class="divs-col">
+                        <img src="1680.webp" alt="engineering">
+                    <h3 class="text-lg"><a href="#">"engineering is marvelous"</a></li></h3>
+                    <p>by Wakarima <br> Mechanical 4.2</p>
+                    </div>
+                    <div class="divs-col">
+                        <img src="1680.webp" alt="engineering">
+                    <h3><a href="#">"engineering is marvelous"</a></li></h3>
+                    <p>by Wakarima <br> Mechanical 4.2</p>
+                    </div>
+                    <div class="divs-col">
+                        <img src="1680.webp" alt="engineering">
+                    <h3><a href="#">"engineering is marvelous"</a></li></h3>
+                    <p>by Wakarima <br> Mechanical 4.2</p>
+                    </div>

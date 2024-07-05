@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKUAT SES Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="flex items-center justify-between">
+                <div class="logo">
+                    <img src="logo.jpg" alt="robo" class="h-20 logo-img">
+                </div>
+                <div>
+                    <ul class="hidden lg:flex gap-5">
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                          <a href="#">Home</a>
+                        </li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a href="#">About us</a>
+                          
+                        </li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a href="#">Membership</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a href="#">Blogs</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a href="#">Merchandise</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a href="#">Contact us</a></li>
+                      </ul>  
+                </div>
+                <!--Mobile screen-->
+                <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                    <i class="fa-solid fa-bars"></i>
+                </div> 
+                <div id="menu" class="hidden bg-cyan-400 h-[100vh absolute inset-0">
+                    <ul class="h-full grid place-items-center py-20">
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                          <a id="hLink" href="#">Home</a>
+                        </li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a id="hLink" href="#">About us</a>
+                          
+                        </li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a id="hLink" href="#">Membership</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a id="hLink" href="#">Blogs</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a id="hLink"  href="#">Merchandise</a></li>
+                        <li class="text-lg hover:text-blue-500 hover:cursor-pointer text-teal-50">
+                            <a id="hLink" href="#">Contact us</a></li>
+                      </ul>  
+                </div>
+            </nav>
+            <div class="hero-section">
+                <div class="top flex flex-col md:flex-row items-center gap-[18vw] mx-20 mt-20">
+                    <div class="left">
+                        <h1 class="text-slate-50">Share your unique <br> insightful article</h1>
+                        <p class="text-slate-50 text-lg">A space where your thoughts, ideas <br> and perspectives are valued and <br> amplified</p></div>
+                    <div class="right">
+                        <img src="image 1.png" alt="robo">
+                    </div>
+                  </div> 
+                  <div class="bottom flex flex-col items-center justify-center mt-20">
+                    <h2 class="text-slate-50">Guidelines</h2>
+                  <ul>
+                    <li class="text-slate-50">Clear,concise and compelling language</li>
+                    <li class="text-slate-50">Dont exceed 200 words</li>
+                    <li class="text-slate-50">Incase of any enquiry, <a href="Contact us"></a></li>
+                    <li>
+                        <button class="bg-[#0CE9F8] hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-5">
+                            Add an article
+                        </button></li>
+                  </div>  
+                
+            </div>
+        </div>
+    </header>
+    <script>
+        //mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelector('#hLink');
+        const faSolid = document.querySelector('.fa-solid');
+
+        hamburger.addEventListener("click", () =>{
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+        hLink.forEach(link =>{
+            link.addEventListener('click',()=> {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark'); 
+            })
+            
+        })
+    </script>
+    <div class="wrapper">
+        <section class="sharearticle">
+            <h5 class="text-lg font-bold mb-4">ARTICLES</h5>
+                <h1 class="text-lg">Discover the hidden gems that shape our digital landscape and engage your mind with thought-provoking content</h1>
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-5 ">
+                    <div class="lg:h-[40vh] rounded-xl scale-100 ">
+                        <div>
+                            <img src="team.jpg" alt="" class="lg:h-full w-full hover:scale-110 transition duration-300 ease-in-out rounded-md">
+                        </div>
+                        <div class="flex items-center gap-5 py-5"> 
+                            <p>29 February 2024</p>
+                            <p>3 min read</p>
+                        </div>
+                        <a href="#blog" class="text 2xl font-bold hover:text-green-700">"Winning Tech Expo 13.0"</a>
+                        
+                    </div>    
+                    <div class="lg:h-[40vh] rounded-xl scale-100">
+                        <div>
+                            <img src="1680.webp" alt="" class="lg:h-full w-full hover:scale-110 transition duration-300 ease-in-out rounded-md">
+                        </div>
+                        <div class="flex items-center gap-5 py-5"> 
+                            <p>29 February 2024</p>
+                            <p>3 min read</p>
+                        </div>
+                        <a href="#blog" class="text 2xl font-bold hover:text-green-700">"Designing Tomorrow: A Chronicle of Engineering Excellence"</a>
+                        
+                    </div>    
+                    <div class="lg:h-[40vh] rounded-xl scale-100">
+                        <div>
+                            <img src="1680.webp" alt="" class="lg:h-full w-full hover:scale-110 transition duration-300 ease-in-out rounded-md">
+                        </div>
+                        <div class="flex items-center gap-5 py-5"> 
+                            <p>29 February 2024</p>
+                            <p>3 min read</p>
+                        </div>
+                        <a href="#blog" class="text 2xl font-bold hover:text-green-700">"Designing Tomorrow: A Chronicle of Engineering Excellence"</a>
+                        
+                    </div>    
+                </div>
+                
+                
+          
+        </section>
+       <section class="newsletter">
+        <h2 class="text-slate-50 text-lg">NEWSLETTER</h2>
+        <p class="text-slate-50">Receive a unique perspective on activities that have shaped our past and continue to inspire our future. Dive into a treasure trove of activities and experiences that have already unfolded, rekindling the excitement and reliving the highlights.</p>
+        <button class="bg-[#0CE9F8] hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-5">
+            NEWSLETTER
+        </button>
+       </section>
+       <section class="MAGAZINE flex flex-col items-center">
+        <h2 class="text-lg">SES MAGAZINE</h2>
+        <p>Discover a world of captivating stories, insightful features, and exclusive content in our community's magazine—your gateway to a rich tapestry of knowledge, inspiration, and the extraordinary experiences that define who we are.</p>
+        <button class="bg-[#0CE9F8] hover:bg-blue-700 text-white py-2 px-4 rounded-md mt-5">
+            MAGAZINE
+        </button>
+    </section>
+    
+     
